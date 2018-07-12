@@ -8,10 +8,8 @@ date: 2017-09-02 23:05:31
 
 # npm setting
 
-# 三 npm
-
-* $ npm install loppo -g (将md文件生成静态网页)
-* 淘宝源
+## 配置淘宝源
+淘宝源
 ```
 //配置淘宝源
 npm config set registry https://registry.npm.taobao.org
@@ -35,6 +33,11 @@ ncu
 ```bash
 ncu -u
 ```
+
+## 常用的 npm 包
+
+### 服务器相关
+- ├── http-server // 启动静态http服务器，可以在任意目录下启动
 
 
 
