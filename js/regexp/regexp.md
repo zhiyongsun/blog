@@ -1,4 +1,10 @@
-# 正则表达式
+---
+title: 正则表达式
+categories: js
+tags: 正则表达式
+abbrlink: 46563
+date: 2017-05-03 22:00:00
+---
 
 ## 正则规则表
 | 字符           | 字符           | 字符 |
@@ -17,3 +23,6 @@
 |+|匹配前面一个表达式1次或者多次。等价于 {1,}。|例如，/a+/匹配了在 "candy" 中的 'a'，和在 "caaaaaaandy" 中所有的 'a'。|
 |?|匹配前面一个表达式0次或者1次。等价于 {0,1}。|例如，/e?le?/ 匹配 "angel" 中的 'el'，和 "angle" 中的 'le' 以及"oslo' 中的'l'。|
 |.|（小数点）匹配除换行符之外的任何单个字符。||
+
+## 参考链接
+1. [MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)

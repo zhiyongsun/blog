@@ -96,7 +96,7 @@ species属性放在prototype对象里，是两个实例对象共享的。只要�
 
 
 # 原型链
-![](/images/class/原型结构图.png)
+![](./prototype.png)
 
 - __proto__ 指向当前构造函数的原型
 
@@ -110,7 +110,7 @@ species属性放在prototype对象里，是两个实例对象共享的。只要�
 
 - 方法(Function)方法这个特殊的对象，除了和其他对象一样有上述_proto_属性之外，还有自己特有的属性——原型属性（prototype），这个属性是一个指针，指向一个对象，这个对象的用途就是包含所有实例共享的属性和方法（我们把这个对象叫做原型对象）。原型对象也有一个属性，叫做constructor，这个属性包含了一个指针，指回原构造函数。
 
-![](/images/class/继承原型链.png)
+![](./extends-and-prototype-chains.png)
 
 
 
