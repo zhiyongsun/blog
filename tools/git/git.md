@@ -96,5 +96,6 @@ Host github.com
         User yourEmailAddress
         IdentityFile ~/.ssh/github_rsa
 ```
+-删除全局配置 ~.gitconfig 
 
 - 按照以上步骤，增加其他账号
