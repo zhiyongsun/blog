@@ -69,5 +69,6 @@ git remote add origin git@github.com:yspbysbp/projectname.git
 git rm -r --cached .
 git add .
 git commit -m 'update .gitignore'
+
 ```
 
