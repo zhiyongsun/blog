@@ -72,3 +72,29 @@ git commit -m 'update .gitignore'
 
 ```
 
+
+## mac 下，配置多个 git 账号
+
+- 进入目录下
+```bash
+$ cd ~.ssh
+```
+
+- 生成rsa
+```bash
+$ ssh-keygen -t rsa -C “yourEmailAddress”
+```
+
+- 输入名称，eg：github_rsa
+
+- 编辑 config 按照以下格式写入
+
+```bash
+# 配置GitHub
+Host github.com
+        HostName github.com
+        User yourEmailAddress
+        IdentityFile ~/.ssh/github_rsa
+```
+
+- 按照以上步骤，增加其他账号
