@@ -105,3 +105,18 @@ Host github.com
 ```
 $ git clone <版本库的网址> <本地目录名>
 ```
+
+## 回退到某个 commit
+
+回退命令,提交
+
+```js
+$ git reset --hard 83ff2785
+$ git push --force
+```
+
+如果有人获取了更新的版本，可能拉去不下来，执行以下操作：
+```js
+$ git fetch --all
+$ git reset --hard origin/branchname
+```
