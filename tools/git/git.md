@@ -2,7 +2,6 @@
 title: git常用命令
 tags: git
 categories: git
-abbrlink: 954
 date: 2017-09-02 23:05:30
 ---
 # git常用命令
@@ -119,4 +118,10 @@ $ git push --force
 ```js
 $ git fetch --all
 $ git reset --hard origin/branchname
+```
+
+## 初始化 submodule
+
+```git
+git submodule update --init --recursive
 ```
