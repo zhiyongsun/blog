@@ -112,43 +112,43 @@ date: 2017-08-27 11:06:14
     import Footer from './Footer';
     ```
   - **高阶模块命名**: 对于生成一个新的模块，其中的模块名 `displayName` 应该为高阶模块名和传入模块名的组合. 例如, 高阶模块 `withFoo()`, 当传入一个 `Bar` 模块的时候， 生成的模块名 `displayName` 应该为 `withFoo(Bar)`.
+  
+> 为什么？一个模块的 `displayName` 可能会在开发者工具或者错误信息中使用到，因此有一个能清楚的表达这层关系的值能帮助我们更好的理解模块发生了什么，更好的Debug.
 
-  > 为什么？一个模块的 `displayName` 可能会在开发者工具或者错误信息中使用到，因此有一个能清楚的表达这层关系的值能帮助我们更好的理解模块发生了什么，更好的Debug.
+```jsx
+// bad
+export default function withFoo(WrappedComponent) {
+  return function WithFoo(props) {
+    return <WrappedComponent {...props} foo />;
+  }
+}
 
-    ```jsx
-    // bad
-    export default function withFoo(WrappedComponent) {
-      return function WithFoo(props) {
-        return <WrappedComponent {...props} foo />;
-      }
-    }
+// good
+export default function withFoo(WrappedComponent) {
+  function WithFoo(props) {
+    return <WrappedComponent {...props} foo />;
+  }
 
-    // good
-    export default function withFoo(WrappedComponent) {
-      function WithFoo(props) {
-        return <WrappedComponent {...props} foo />;
-      }
+  const wrappedComponentName = WrappedComponent.displayName
+    || WrappedComponent.name
+    || 'Component';
 
-      const wrappedComponentName = WrappedComponent.displayName
-        || WrappedComponent.name
-        || 'Component';
-
-      WithFoo.displayName = `withFoo(${wrappedComponentName})`;
-      return WithFoo;
-    }
-    ```
+  WithFoo.displayName = `withFoo(${wrappedComponentName})`;
+  return WithFoo;
+}
+```
 
   - **属性命名**: 避免使用DOM相关的属性来用作其他的用途。
 
   > 为什么？对于`style` 和 `className`这样的属性名，我们都会默认它们代表一些特殊的含义，如元素的样式，CSS class的名称。在你的应用中使用这些属性来表示其他的含义会使你的代码更难阅读，更难维护，并且可能会引起bug。
 
-    ```js
-    // bad
-    <MyComponent style="fancy" />
+```js
+// bad
+<MyComponent style="fancy" />
 
-    // good
-    <MyComponent variant="fancy" />
-    ```
+// good
+<MyComponent variant="fancy" />
+```
 
 ## Declaration 声明模块
 
@@ -199,19 +199,19 @@ date: 2017-08-27 11:06:14
 
   > 为什么? HTML属性也是用双引号, 因此JSX的属性也遵循此约定.
 
-    ```jsx
-    // bad
-    <Foo bar='bar' />
+```jsx
+// bad
+<Foo bar='bar' />
 
-    // good
-    <Foo bar="bar" />
+// good
+<Foo bar="bar" />
 
-    // bad
-    <Foo style={{ left: "20px" }} />
+// bad
+<Foo style={{ left: "20px" }} />
 
-    // good
-    <Foo style={{ left: '20px' }} />
-    ```
+// good
+<Foo style={{ left: '20px' }} />
+```
 
 ## Spacing 空格
 
@@ -294,13 +294,13 @@ date: 2017-08-27 11:06:14
 
   > 为什么? 屏幕助读器已经把 `img` 标签标注为图片了, 所以没有必要再在 `alt` 里说明了.
 
-    ```jsx
-    // bad
-    <img src="hello.jpg" alt="Picture of me waving hello" />
+```jsx
+// bad
+<img src="hello.jpg" alt="Picture of me waving hello" />
 
-    // good
-    <img src="hello.jpg" alt="Me waving hello" />
-    ```
+// good
+<img src="hello.jpg" alt="Me waving hello" />
+```
 
   - 使用有效正确的 aria `role`属性值 [ARIA roles](https://www.w3.org/TR/wai-aria/roles##role_definitions). eslint: [`jsx-a11y/aria-role`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md)
 
@@ -470,35 +470,35 @@ date: 2017-08-27 11:06:14
 
   > 为什么? 在每次 `render` 过程中， 再调用 `bind` 都会新建一个新的函数，浪费资源.
 
-    ```jsx
-    // bad
-    class extends React.Component {
-      onClickDiv() {
-        // do stuff
-      }
+```jsx
+// bad
+class extends React.Component {
+  onClickDiv() {
+    // do stuff
+  }
 
-      render() {
-        return <div onClick={this.onClickDiv.bind(this)} />
-      }
-    }
+  render() {
+    return <div onClick={this.onClickDiv.bind(this)} />
+  }
+}
 
-    // good
-    class extends React.Component {
-      constructor(props) {
-        super(props);
+// good
+class extends React.Component {
+  constructor(props) {
+    super(props);
 
-        this.onClickDiv = this.onClickDiv.bind(this);
-      }
+    this.onClickDiv = this.onClickDiv.bind(this);
+  }
 
-      onClickDiv() {
-        // do stuff
-      }
+  onClickDiv() {
+    // do stuff
+  }
 
-      render() {
-        return <div onClick={this.onClickDiv} />
-      }
-    }
-    ```
+  render() {
+    return <div onClick={this.onClickDiv} />
+  }
+}
+```
 
   - 在React模块中，不要给所谓的私有函数添加 `_` 前缀，本质上它并不是私有的.
   > 为什么？`_` 下划线前缀在某些语言中通常被用来表示私有变量或者函数。但是不像其他的一些语言，在JS中没有原生支持所谓的私有变量，所有的变量函数都是共有的。尽管你的意图是使它私有化，在之前加上下划线并不会使这些变量私有化，并且所有的属性（包括有下划线前缀及没有前缀的）都应该被视为是共有的。

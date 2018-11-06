@@ -21,8 +21,9 @@ date: 2017-09-02 23:05:30
 
 
 ## 放弃merge
+
 ```git
-git merge --abort
+$ git merge --abort
 ```
 
 # git撤销commit，但未git push的命令
@@ -48,37 +49,41 @@ and the repository exists.
 解决如下:
 
 ```bash
-ssh-agent -s
-ssh-add ~/.ssh/id_rsa
+$ ssh-agent -s
+$ ssh-add ~/.ssh/id_rsa
 ```
 
 ## 放弃本地修改，FETCH_HEAD表示上一次成功git pull之后形成的commit点
-   ```bash
-   git reset --hard FETCH_HEAD
-   ```
+
+```bash
+$ git reset --hard FETCH_HEAD
+```
 
 ## 空项目与远程项目连接
+
 ```bash
-git remote add origin git@github.com:yspbysbp/projectname.git
+$ git remote add origin git@github.com:yspbysbp/projectname.git
 ```
 
 ## git清除本地缓存命令
-```
-git rm -r --cached .
-git add .
-git commit -m 'update .gitignore'
 
+```bash
+$ git rm -r --cached .
+$ git add .
+$ git commit -m 'update .gitignore'
 ```
 
 
 ## mac 下，配置多个 git 账号
 
 - 进入目录下
+
 ```bash
 $ cd ~.ssh
 ```
 
 - 生成rsa
+
 ```bash
 $ ssh-keygen -t rsa -C “yourEmailAddress”
 ```
@@ -108,19 +113,20 @@ $ git clone <版本库的网址> <本地目录名>
 
 回退命令,提交
 
-```js
+```bash
 $ git reset --hard 83ff2785
 $ git push --force
 ```
 
 如果有人获取了更新的版本，可能拉去不下来，执行以下操作：
-```js
+
+```bash
 $ git fetch --all
 $ git reset --hard origin/branchname
 ```
 
 ## 初始化 submodule
 
-```git
-git submodule update --init --recursive
+```bash
+$ git submodule update --init --recursive
 ```

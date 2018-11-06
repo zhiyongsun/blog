@@ -79,6 +79,5 @@ $ chkconfig iptables on          ## 永久关闭后启用
 ```
 
 ##  原文出处
-在原文基础上，修改添加了部分
-http://www.awaimai.com/1650.html
+[在原文基础上，修改添加了部分](http://www.awaimai.com/1650.html)
 

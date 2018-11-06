@@ -1,11 +1,11 @@
 ---
-title: 数组字母的排列组合
+title: 字母的排列组合
 tags: ['算法','数组字母的排列组合']
 category: 数组字母的排列组合
 date: 2018-04-30 10:00:00
 ---
 
-## 代码
+## 字母的排列组合
 
 ```js
 function logCombSort(str) {

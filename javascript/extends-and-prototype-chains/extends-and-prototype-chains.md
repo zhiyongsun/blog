@@ -2,11 +2,10 @@
 title: '继承与原型链 '
 category: JavaScript
 tags: ['继承与原型链']
-abbrlink: 1831
 date: 2017-09-22 22:00:00
 ---
 
-# 历史
+## 历史
 - 1994年，网景公司（Netscape）发布了Navigator浏览器0.9版。
 - 历史上第一个比较成熟的网络浏览器，轰动一时。但是，这个版本的浏览器只能用来浏览，不具备与访问者互动的能力.
 - 网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。
@@ -21,6 +20,7 @@ ClassName *object = new ClassName(param);
 ```
 
 Java的写法：
+
 ```Java
 Foo foo = new Foo();
 ```
@@ -41,7 +41,7 @@ Foo foo = new Foo();
     alert(dogA.name); // 大毛
 ```
 
-# new运算符的缺点
+## new运算符的缺点
 用构造函数生成实例对象，有一个缺点，那就是无法共享属性和方法。
 
 ```javascript
@@ -63,7 +63,7 @@ Foo foo = new Foo();
 　　alert(dogB.species); // 显示"犬科"，不受dogA的影响
 ```
 
-# prototype属性的引入
+## prototype属性的引入
 考虑到这一点，Brendan Eich决定为构造函数设置一个prototype属性。
 
 这个属性包含一个对象（以下简称"prototype对象"），所有实例对象需要**共享的属性和方法**，都放在这个对象里面；那些不需要共享的属性和方法，就放在构造函数里面。
@@ -90,12 +90,7 @@ species属性放在prototype对象里，是两个实例对象共享的。只要�
 ```
 这就是Javascript继承机制的设计思想。
 
-# 封装
-
-[example1.html](/example1.html)
-
-
-# 原型链
+## 原型链
 ![](./prototype.png)
 
 - __proto__ 指向当前构造函数的原型
@@ -134,14 +129,8 @@ f1和f2是Foo这个对象的两个实例，这两个对象也有属性__proto__�
   - 2.方法除了有属性__proto__,还有属性prototype，prototype指向该方法的原型对象。
   - __proto__是每个对象都有的一个属性，而prototype是函数才会有的属性。
 
-# 多重继承
-[多重继承](/多重继承.html)
-[为什么使用Object.create](/为什么使用objectcreate.html)
 
-# 多层继承
-[多层继承](/多层继承.html)
-
-# 类继承
+## 类继承
 ```javascript
 
 class Point {
@@ -157,8 +146,8 @@ class ColorPoint extends Point {
     return this.color + ' ' + super.toString(); // 调用父类的toString()
   }
 }
-
 ```
+
 - 子类必须在constructor方法中调用super方法，否则新建实例时会报错。这是因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工。如果不调用super方法，子类就得不到this对象。
 
 - 类的原型方法不可枚举
@@ -228,7 +217,7 @@ Object.setPrototypeOf = function (obj, proto) {
 }
 ```
 
-# 类重写 与 new.target 与 高阶组件
+## 类重写 与 new.target 与 高阶组件
 
 - 类重写
 查看 banner实例 

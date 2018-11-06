@@ -47,8 +47,6 @@ console.log(Array.from(new Set(arr)));
   }
 ```
 
-## 使用qu
-
 ## 参考链接
 [JS实现数组去重方法总结(六种方法)
 ](http://www.jb51.net/article/118657.htm)

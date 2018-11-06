@@ -4,7 +4,6 @@ category: JavaScript
 tags: ['JavaScript']
 date: 2018-02-26 22:00:00
 ---
-# js性能分析方法
 
 一般情况下，作为开发者，需要对代码性能进行分析，可以使用以下三种方法进行分析。
 

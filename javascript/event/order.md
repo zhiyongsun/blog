@@ -1,5 +1,5 @@
 ---
-title: event order
+title: 事件的捕获和冒泡
 category: JavaScript
 tags: ['event']
 date: 2017-05-03 22:00:00

@@ -1,11 +1,9 @@
 ---
-title: The git Plugin
+title: The zsh git Plugin
 tags: ['zsh']
 category: tools
 date: 2017-09-24 23:49:29
 ---
-
-## The git Plugin
 
 The [git](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git) plugin provides many [aliases](#aliases) and a few useful [functions](#functions).
 

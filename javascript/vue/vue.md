@@ -22,16 +22,20 @@ date: 2018-05-03 22:00:00
 ## 模板语法
 - 数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值
 - 原始 HTML：双大括号会将数据解释为普通文本，而非 HTML 代码。为了输出真正的 HTML，你需要使用 v-html 指令
-```
+
+```js
 <p>Using mustaches: {{ rawHtml }}</p>
 <p>Using v-html directive: <span v-html="rawHtml"></span></p>
 ```
 - 特性：Mustache 语法不能作用在 HTML 特性上，遇到这种情况应该使用 v-bind 指令：
-```
+
+```js
 <div v-bind:id="dynamicId"></div>
 ```
+
 - 使用 JavaScript 表达式:
-```vue
+
+```js
 {{ number + 1 }}
 
 {{ ok ? 'YES' : 'NO' }}
@@ -45,36 +49,42 @@ date: 2018-05-03 22:00:00
 
 - 参数
   一些指令能够接收一个“参数”，在指令名称之后以冒号表示。例如，v-bind 指令可以用于响应式地更新 HTML 特性：
-```vue
+  
+```js
 <a v-bind:href="url">...</a>
 ```
 
 - 修饰符
   修饰符 (Modifiers) 是以半角句号 . 指明的特殊后缀，用于指出一个指令应该以特殊方式绑定。例如，.prevent 修饰符告诉 v-on 指令对于触发的事件调用 event.preventDefault()：
-```vue
+  
+```js
 <form v-on:submit.prevent="onSubmit">...</form>
 ```
 - 缩写
   - v-bind 缩写
- ```vue
+  
+```js
 <!-- 完整语法 -->
 <a v-bind:href="url">...</a>
 <!-- 缩写 -->
 <a :href="url">...</a>
 ```
   - v-on 缩写
-```vue
+  
+```js
 <!-- 完整语法 -->
 <a v-on:click="doSomething">...</a>
 
 <!-- 缩写 -->
 <a @click="doSomething">...</a>
+
 ```
 
 ## 计算属性和侦听器
 ### 计算属性
 计算属性是基于它们的依赖进行缓存的
-```vue
+
+```js
 <div id="example">
   <p>Original message: "{{ message }}"</p>
   <p>Computed reversed message: "{{ reversedMessage }}"</p>
@@ -97,7 +107,8 @@ var vm = new Vue({
 
 #### 计算属性缓存 vs 方法
 方法
-```vue
+
+```js
 <p>Reversed message: "{{ reversedMessage() }}"</p>
 
 // 在组件中
@@ -107,8 +118,10 @@ methods: {
   }
 }
 ```
+
 计算属性是基于它们的依赖进行缓存的，这意味着因为 Date.now() 不是响应式依赖：
-```vue
+
+```js
 computed: {
   now: function () {
     return Date.now()
@@ -131,14 +144,16 @@ Vue 提供了一种更通用的方式来观察和响应 Vue 实例上的数据�
 ### props
   - 注意在 JavaScript 中对象和数组是通过引用传入的，所以对于一个数组或对象类型的 prop 来说，在子组件中改变这个对象或数组本身将会影响到父组件的状态。
   - 传入值数字，布尔值，数组，都需要v-bind，默认是字符串
-```vue
+  
+```js
 <!-- 即便 `42` 是静态的，我们仍然需要 `v-bind` 来告诉 Vue -->
 <!-- 这是一个 JavaScript 表达式而不是一个字符串。-->
 <blog-post v-bind:likes="42"></blog-post>
 ```
   - 传入一个对象的所有属性
    如果你想要将一个对象的所有属性都作为 prop 传入，你可以使用不带参数的 v-bind (取代 v-bind:prop-name)。例如，对于一个给定的对象 post：
-```vue
+   
+```js
 post: {
   id: 1,
   title: 'My Journey with Vue'
@@ -146,7 +161,8 @@ post: {
 <blog-post v-bind="post"></blog-post>
 ```
   - Prop 验证
-  ```vue
+  
+```js
 Vue.component('my-component', {
   props: {
     // 基础的类型检查 (`null` 匹配任何类型)
@@ -180,13 +196,8 @@ Vue.component('my-component', {
     }
   }
 })
-
 ```
     
-
 ## 疑问点
 - el有什么作用 ？
-- 表达式和语句的区别 ？
-- watch 的用法？
-- v-bind 具体有什么用？
 

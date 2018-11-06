@@ -1,5 +1,5 @@
 ---
-title: 常用命令
+title: bash常用命令
 tags: ['bash']
 category: tools
 date: 2017-09-02 23:05:30

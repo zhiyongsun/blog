@@ -1,11 +1,9 @@
 ---
-title: JavaScript 常用方法
+title: 数组常用方法
 category: JavaScript
 tags: ['array']
 date: 2017-05-03 22:00:00
 ---
-
-## 数组常用方法
 
 ## Array.from()
 

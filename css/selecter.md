@@ -1,5 +1,5 @@
 ---
-title: 选择器
+title: css 选择器
 category: css 
 tags: ['css选择器']
 date: 2017-02-04 10:08:29
@@ -7,6 +7,7 @@ date: 2017-02-04 10:08:29
 
 ## not first child
 - 方法1：ie6-8 不能使用
+
 ```css
 .item:not(:first-child) {
     margin-left: 10px;
@@ -22,6 +23,7 @@ date: 2017-02-04 10:08:29
 ```
 
 - 方法3： div+p（选择紧接在 <div> 元素之后的所有 <p> 元素。）
+
 ```css
 .item + .item {
  margin-left: 10px;

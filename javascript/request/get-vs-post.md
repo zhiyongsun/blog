@@ -4,7 +4,6 @@ category: JavaScript
 tags: ['get vs post']
 date: 2017-05-03 22:00:00
 ---
-# get vs post 
 原理上的区别 根据HTTP规范 GET用于信息获取,而且应该是安全的和幂等的。
 POST表示可能修改变服务器上的资源的请求。
 

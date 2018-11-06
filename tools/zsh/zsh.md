@@ -38,13 +38,16 @@ $ chsh -s /bin/zsh
 [参考地址](https://github.com/robbyrussell/oh-my-zsh)
 
  - 安装 autojump
- ```bash
- $ brew install autojump
- ```
- 下代码加入 ~/.zshrc 配置文件
- ```bash
- [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
- ```
+ 
+```bash
+$ brew install autojump
+```
+下代码加入 ~/.zshrc 配置文件
+
+```bash
+[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
+```
+
 [plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)
  
  

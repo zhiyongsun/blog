@@ -5,8 +5,6 @@ category: js性能优化
 date: 2017-02-04 10:08:29
 ---
 
-# js性能优化
-
 ## switch vs if esle
 switch在判断分支时，没有判断所有的可能性，而是用一个静态表来解决这个问题，所以速度要比if-else快。 
 

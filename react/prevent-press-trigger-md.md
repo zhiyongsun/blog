@@ -135,7 +135,3 @@ class LongPress extends React.Component {
   }
 }
 ```
-
-## 预览地址
-[press效果预览](../themes/next/source/react/index.html)
-

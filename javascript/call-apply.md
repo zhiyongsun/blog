@@ -5,8 +5,6 @@ tags: ['JavaScript', 'call vs apply']
 date: 2017-05-03 22:00:00
 ---
 
-# call 与 apply性能分析
-
 ## call 比 apply 快的多，下面代码运行结果
 
 ```javascript

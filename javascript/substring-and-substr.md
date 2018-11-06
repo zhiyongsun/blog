@@ -10,7 +10,10 @@ date: 2017-02-08 22:00:00
 substring与substr的区别
 ## 区别
 1. substring    
-`stringObject.substring(start,stop)`    
+
+```js
+stringObject.substring(start,stop)
+```    
 start：必选，非负整数，第一个字符的位置在stingObject的位置
 stop： 可选，非负整数，
 2. substr() 

@@ -5,8 +5,6 @@ category: node
 date: 2017-09-02 10:08:29
 ---
 
-tcp-ip
-
 * TCP 有反馈机制
     * 头部有端口号
     * 最大64k

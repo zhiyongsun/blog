@@ -1,11 +1,9 @@
 ---
-title: get vs post 
+title: 获取随机色
 category: JavaScript
 tags: ['JavaScript', 'JavaScript tricks']
 date: 2017-05-03 22:00:00
 ---
-
-# 获取随机色
 
 ```js
 function getRandomColor () {

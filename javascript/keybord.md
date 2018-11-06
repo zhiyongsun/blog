@@ -4,7 +4,7 @@ category: JavaScript
 tags: ['keyboard event']
 date: 2017-02-15 22:00:00
 ---
-###js keyup、keypress和keydown事件 
+## js keyup、keypress和keydown事件 
 以上这三种都是键盘事件,当一个按键被pressed 或released在每一个现代浏览器中，都可能有三种客户端事件。
 
 keydown event
@@ -14,12 +14,14 @@ keyup event
 keydown事件发生在键盘的键被按下的时候，接下来触发keypress事件。 keyup 事件在按键被释放的时候触发。
 
 这三个事件在页面中的使用方法如下例：
+```html
+<input id="testkeyevent" name="testkeyevent"  onKeyUp="keyup()" />`
 
-`<input id="testkeyevent" name="testkeyevent"  onKeyUp="keyup()" />`
+<input id="testkeyevent" name="testkeyevent" onkeypress="keypress()" />
 
-`<input id="testkeyevent" name="testkeyevent" onkeypress="keypress()" />`
+<input id="testkeyevent" name="testkeyevent"   onkeydown="keydown()" />
+```
 
-`<input id="testkeyevent" name="testkeyevent"   onkeydown="keydown()" />`  
 对应的js函数：
 
 function keyup(){ ...}
@@ -60,7 +62,8 @@ MessageBox.Show("KeyUp:Ctrl+" + e.KeyValue.ToString());
 以下是一些键盘上的键对应的Code：以下是一些键盘上的键对应的Code：.
 
 
-`<script type="text/javascript" language=JavaScript charset="UTF-8">
+```js
+<script type="text/javascript" language=JavaScript charset="UTF-8">
       document.onkeydown=function(event){
             var e = event || window.event || arguments.callee.caller.arguments[0];
             if(e && e.keyCode==27){ // 按 Esc 
@@ -73,10 +76,13 @@ MessageBox.Show("KeyUp:Ctrl+" + e.KeyValue.ToString());
                  //要做的事情
             }
         }; 
-</script>`
+</script>
+```
 只要你定义了这些键的动作，你在浏览器里按下这些键就会响应，兼容目前所有浏览器。
 > js 里面的键盘事件经常用到，所以收集了键盘事件对应的键码来分享下：
-keyCode 8 = BackSpace BackSpace
+
+```js
+skeyCode 8 = BackSpace BackSpace
 keyCode 9 = Tab Tab
 keyCode 12 = Clear
 keyCode 13 = Enter
@@ -223,9 +229,14 @@ keyCode 251 = ssharp question backslash
 keyCode 252 = asciicircum degree
 keyCode 253 = 3 sterling
 keyCode 254 = Mode_switch
+```
+
+
 使用event对象的keyCode属性判断输入的键值
 eg：if(event.keyCode==13)alert(“enter!”);
 键值对应表
+
+```js
 A　　0X65 　U 　　0X85
 B　　0X66　 V　　 0X86
 C　　0X67　 W　　 0X87
@@ -246,4 +257,6 @@ Q　　0X81　ESC　　0X1B
 R　　0X82　CTRL 　0X11
 S　　0X83　SHIFT　0X10
 T　　0X84　ENTER　0XD
+```
+
 如果要使用组合键，则可以判断是否同时按下了这几个键，比如ctrl键、shift键以及alt键的组合使用就可以判断是否多按下了ctrl键、shift键以及alt键

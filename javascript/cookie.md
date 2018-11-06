@@ -4,7 +4,6 @@ category: JavaScript
 tags: ['cookie']
 date: 2017-02-15 22:00:01
 ---
-# cookie
 
 HTTP Cookie（也叫Web cookie或者浏览器Cookie）是服务器发送到用户浏览器并保存在浏览器上的一块数据，它会在浏览器下一次发起请求时被携带并发送到服务器上。
 

@@ -4,7 +4,6 @@ category: JavaScript
 tags: ['console']
 date: 2017-02-15 22:00:01
 ---
-# console
 
 ## log
 输出正常的 log

@@ -4,7 +4,7 @@ category: JavaScript
 tags: ['arguments']
 date: 2017-05-03 22:00:00
 ---
-# 将arguments变成数组
+
 ```javascript
 function a(a, b, c) {
   let arr = Array.prototype.slice.call(arguments)
