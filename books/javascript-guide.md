@@ -1,8 +1,7 @@
 ---
 title: JavaScript权威指南读书笔记
-categories: books
-tags: books
-abbrlink: 33297
+category: books
+tags: ['books']
 date: 2017-01-20 22:00:00
 ---
 ## JavaScript权威指南

@@ -1,8 +1,9 @@
 ---
 title: seo
-abbrlink: 2
+tags: ['seo']
+category: seo
+date: 2016-11-29 10:08:29
 ---
-# seo
 
 ## keyword 
 
@@ -15,4 +16,3 @@ abbrlink: 2
   - 微博指数（对应着落页）
   - 历史搜索记录
   
-##  

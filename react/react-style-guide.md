@@ -1,40 +1,40 @@
 ---
 title: react风格
-tags: react
-abbrlink: 61700
+tags: ['react']
+category: react
 date: 2017-08-27 11:06:14
 ---
 
-# 规范是必要的
+## 规范是必要的
 随着react项目代码越来越多，形成一套规范是必要的。结合现有项目，形成一套公用的规范。
 
-# react规范
+## react规范
 
-# 内容目录
+## 内容目录
 
-  1. [基本规范](#basic-rules-基本规范)
-  1. [Class vs React.createClass vs stateless](#创建模块)
-  1. [命名](#naming-命名)
-  1. [声明模块](#declaration-声明模块)
-  1. [代码对齐](#alignment-代码对齐)
-  1. [单引号还是双引号](#quotes-单引号还是双引号)
-  1. [空格](#spacing-空格)
-  1. [属性](#props-属性)
-  1. [Refs引用](#refs)
-  1. [括号](#parentheses-括号)
-  1. [标签](#tags-标签)
-  1. [函数/方法](#methods-函数)
-  1. [模块生命周期](#ordering-react-模块生命周期)
-  1. [isMounted](#ismounted)
+  1. [基本规范](##basic-rules-基本规范)
+  1. [Class vs React.createClass vs stateless](##创建模块)
+  1. [命名](##naming-命名)
+  1. [声明模块](##declaration-声明模块)
+  1. [代码对齐](##alignment-代码对齐)
+  1. [单引号还是双引号](##quotes-单引号还是双引号)
+  1. [空格](##spacing-空格)
+  1. [属性](##props-属性)
+  1. [Refs引用](##refs)
+  1. [括号](##parentheses-括号)
+  1. [标签](##tags-标签)
+  1. [函数/方法](##methods-函数)
+  1. [模块生命周期](##ordering-react-模块生命周期)
+  1. [isMounted](##ismounted)
 
-# Basic Rules 基本规范
+## Basic Rules 基本规范
 
   - 每个文件只写一个模块.
-    - 但是多个[无状态模块](https://facebook.github.io/react/docs/reusable-components.html#stateless-functions)可以放在单个文件中. eslint: [`react/no-multi-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless).
+    - 但是多个[无状态模块](https://facebook.github.io/react/docs/reusable-components.html##stateless-functions)可以放在单个文件中. eslint: [`react/no-multi-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md##ignorestateless).
   - 推荐使用JSX语法.
   - 不要使用 `React.createElement`，除非从一个非JSX的文件中初始化你的app.
 
-# 创建模块
+## 创建模块
    Class vs React.createClass vs stateless  
 
   - 如果你的模块有内部状态或者是`refs`, 推荐使用 `class extends React.Component` 而不是 `React.createClass` ,除非你有充足的理由来使用这些方法.   
@@ -79,7 +79,7 @@ date: 2017-08-27 11:06:14
     }
     ```
 
-# Naming 命名
+## Naming 命名
 
   - **扩展名**: 本项目中，React模块使用 `.js` 扩展名.
   - **文件名**: 文件名使用帕斯卡命名. 如, `ReservationCard.js`.
@@ -150,7 +150,7 @@ date: 2017-08-27 11:06:14
     <MyComponent variant="fancy" />
     ```
 
-# Declaration 声明模块
+## Declaration 声明模块
 
   - 不要使用 `displayName` 来命名React模块，而是使用引用来命名模块， 如 class 名称.
 
@@ -166,7 +166,7 @@ date: 2017-08-27 11:06:14
     }
     ```
 
-# Alignment 代码对齐
+## Alignment 代码对齐
 
   - 遵循以下的JSX语法缩进/格式. eslint: [`react/jsx-closing-bracket-location`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md)
 
@@ -193,7 +193,7 @@ date: 2017-08-27 11:06:14
     </Foo>
     ```
 
-# Quotes 单引号还是双引号
+## Quotes 单引号还是双引号
 
   - 对于JSX属性值总是使用双引号(`"`), 其他均使用单引号(`'`). eslint: [`jsx-quotes`](http://eslint.org/docs/rules/jsx-quotes)
 
@@ -213,7 +213,7 @@ date: 2017-08-27 11:06:14
     <Foo style={{ left: '20px' }} />
     ```
 
-# Spacing 空格
+## Spacing 空格
 
   - 总是在自动关闭的标签前加一个空格，正常情况下也不需要换行. eslint: [`no-multi-spaces`](http://eslint.org/docs/rules/no-multi-spaces), [`react/jsx-space-before-closing`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md)
 
@@ -242,7 +242,7 @@ date: 2017-08-27 11:06:14
     <Foo bar={baz} />
     ```
 
-# Props 属性
+## Props 属性
 
   - JSX属性名使用骆驼式风格`camelCase`.
 
@@ -302,7 +302,7 @@ date: 2017-08-27 11:06:14
     <img src="hello.jpg" alt="Me waving hello" />
     ```
 
-  - 使用有效正确的 aria `role`属性值 [ARIA roles](https://www.w3.org/TR/wai-aria/roles#role_definitions). eslint: [`jsx-a11y/aria-role`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md)
+  - 使用有效正确的 aria `role`属性值 [ARIA roles](https://www.w3.org/TR/wai-aria/roles##role_definitions). eslint: [`jsx-a11y/aria-role`](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md)
 
     ```jsx
     // bad - not an ARIA role
@@ -375,7 +375,7 @@ date: 2017-08-27 11:06:14
   };
   ```
 
-# Refs
+## Refs
 
   - 总是在Refs里使用回调函数. eslint: [`react/no-string-refs`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md)
 
@@ -392,7 +392,7 @@ date: 2017-08-27 11:06:14
     ```
 
 
-# Parentheses 括号
+## Parentheses 括号
 
   - 将多行的JSX标签写在 `()`里. eslint: [`react/wrap-multilines`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/wrap-multilines.md)
 
@@ -420,7 +420,7 @@ date: 2017-08-27 11:06:14
     }
     ```
 
-# Tags 标签
+## Tags 标签
 
   - 对于没有子元素的标签来说总是自己关闭标签. eslint: [`react/self-closing-comp`](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md)
 
@@ -447,7 +447,7 @@ date: 2017-08-27 11:06:14
     />
     ```
 
-# Methods 函数
+## Methods 函数
 
   - 使用箭头函数来获取本地变量.
 
@@ -537,7 +537,7 @@ date: 2017-08-27 11:06:14
     }
     ```
 
-# Ordering React 模块生命周期
+## Ordering React 模块生命周期
 
   - `class extends React.Component` 的生命周期函数:
 
@@ -611,5 +611,5 @@ date: 2017-08-27 11:06:14
   1. *Optional render methods* like `renderNavigation()` or `renderProfilePicture()`
   1. `render`
 
-# 参考链接 
+## 参考链接 
 1. https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md

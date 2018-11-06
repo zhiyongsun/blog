@@ -1,8 +1,7 @@
 ---
 title: 2016年终总结
-categories: diaries
-tags: 年终总结
-abbrlink: 25969
+category: diaries
+tags: ['diaries','年终总结']
 date: 2016-12-03 22:00:00
 ---
 

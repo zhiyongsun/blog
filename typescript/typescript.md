@@ -1,8 +1,9 @@
 ---
 title: typescript
-abbrlink: 4
+tags: ['typescript']
+category: typescript
+date: 2017-02-06 10:08:29
 ---
-# typescript
 
 ## 基础入门
 

@@ -1,11 +1,9 @@
 ---
-title: 前端开发
-tags: framework
-categories: framework
-abbrlink: 51839
+title: 框架层面需要做的事情
+tags: ['framework']
+category: framework
 date: 2017-02-06 10:08:29
 ---
-# 框架层面需要做的事情
 
 ## 原则
   - less is more

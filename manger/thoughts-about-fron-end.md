@@ -1,10 +1,10 @@
 ---
 title: 前端开发管理注意事项
-tags: manger
-categories: manger
-abbrlink: 36576
+tags: ['manger']
+category: manger
 date: 2017-09-02 10:08:29
 ---
+
 最近,团队方面出现了许多问题  
 1 开发流程严重滞后
 2 开发质量低下  

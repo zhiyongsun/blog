@@ -1,15 +1,14 @@
 ---
 title: css设计模式
-categories: css
-tags: css css设计模式
-abbrlink: 52025
+category: css
+tags: ['css', 'css设计模式']
 date: 2017-02-04 22:00:00
 ---
 
-# 背景
+## 背景
 思考css的设计模式
 
-# SMACSS——Scalable and Modular Architecture for CSS
+## SMACSS——Scalable and Modular Architecture for CSS
 它的核心是：
 
 1、Base（基础）
@@ -30,7 +29,7 @@ date: 2017-02-04 22:00:00
 有了以上5点分类策略，我们的代码组织起来，思路就会很清晰，会安排的很有序，另外的好处是，可以解决命名难和混乱，之所以有这个问题，主因便是我们不知道以怎样的标准去定义元素的所属和特点，有了分类之后，我们不会很随意和混乱的去命名，有了依据，就能更轻松，也不易冲突。
 
 
-# 参考链接 
+## 参考链接 
 1. http://div.io/topic/1806
 
 

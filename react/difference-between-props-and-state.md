@@ -1,12 +1,11 @@
 ---
 title: difference between props and state
-tags: react
-categories: react
-abbrlink: 37841
+tags: ['react']
+category: react
 date: 2016-11-29 10:08:29
 ---
 
-# 区别
+## 区别
 props和state之间是紧密相关的。**父组件的state**常常转变**子组件的props**成下面我们通过一个父子组件从上至下来分析它们。
   
 假如我们有个父组件，可以在父组件的state里定义子组件的数据比如：  
@@ -32,10 +31,10 @@ this.setState({ childData: 'Child Data' });
 let Chilid = ({data,handleChange}) =>
     <div onClick={handleChange}>{data.name}</div>
 ```
-# 小结
+## 小结
 ==props：==一般用于父组件向子组件通信，在组件之间通信使用。  
 ==state：==一般用于组件内部的状态维护，更新组建内部的数据，状态，更新子组件的props等。
-# 完整代码
+## 完整代码
 父组件
 ```
 import React, {Component} from 'react';
@@ -79,6 +78,6 @@ export default Chilid
 
 
 
-# 参考链接 
+## 参考链接 
 1. http://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react
-2. https://facebook.github.io/react/docs/state-and-lifecycle.html#the-data-flows-down
+2. https://facebook.github.io/react/docs/state-and-lifecycle.html##the-data-flows-down

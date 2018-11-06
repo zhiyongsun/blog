@@ -1,10 +1,10 @@
 ---
 title: tcp-ip
-tags: node
-categories: node
-abbrlink: 49515
+tags: ['node']
+category: node
 date: 2017-09-02 10:08:29
 ---
+
 tcp-ip
 
 * TCP 有反馈机制

@@ -1,12 +1,9 @@
 ---
 title: svn常用命令
-tags: svn
-categories: svn
-abbrlink: 18837
+tags: ['svn']
+category: tools
 date: 2017-09-02 23:05:30
 ---
-
-# svn 常用命令
 
 1. revert 
     * 回滚整个目录

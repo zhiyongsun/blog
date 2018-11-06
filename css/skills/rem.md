@@ -1,8 +1,7 @@
 ---
 title: rem实现原理
-categories: css
-tags: rem
-abbrlink: 17664
+category: css
+tags: ['css', 'rem']
 date: 2017-02-07 22:00:00
 ---
 rem的一句话,使用它可以让你使用长度的地方,基于html的fontsize的值  

@@ -1,11 +1,9 @@
 ---
 title: flex
-categories: css
-tags: flex
-abbrlink: 59381
+category: css
+tags: ['flex']
 date: 2017-02-03 22:00:00
 ---
-# flex 基本属性
 
 ## 一、容器的属性
 

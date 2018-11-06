@@ -1,7 +1,7 @@
 ---
 title: 底部垂直居中
-categories: css
-abbrlink: 5870
+category: css
+tags: ['css']
 date: 2017-02-07 22:00:00
 ---
 

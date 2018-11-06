@@ -1,12 +1,9 @@
 ---
 title: react
-tags: react
-categories: react
-abbrlink: 52831
+tags: ['react']
+category: react
 date: 2017-02-15 10:08:29
 ---
-
-# react 性能优化
 
 ## componentWillUnmount() 里面销毁一些
 we would want to unregister any global/system/library events, destroy 3rd party UI library elements, etc.

@@ -1,19 +1,17 @@
 ---
 title: mbp setting
-tags: mbp
-categories: mbp
-abbrlink: 23645
+tags: ['mbp']
+category: tools
 date: 2017-02-06 10:08:29
 ---
-# mbp setting
 
-# 一 softwares
-# study
+## 一 softwares
+## study
 * kindle
 * 有道
 * evernote
 
-# code
+## code
 * brew
 * node
 * charles(抓包)
@@ -27,26 +25,26 @@ date: 2017-02-06 10:08:29
 * mongodb
 * iterm
 
-# browers
+## browers
 * chrome
 * firefox
 
-# design
+## design
 * sketch
 
 
-# communication
+## communication
 * QQ
 * WeChat
 
-# else
+## else
 * 搜狗输入法
 * Rar
 * 百度网盘
 
 
 
-# 二 setting
+## 二 setting
 * 显示隐藏文件夹 
 
 1. 早期的OS X（10.6~10.8）系统可以使用如下两条命令来开始或者关闭系统隐藏文件的显示：
@@ -68,7 +66,7 @@ defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显�
 ```
 
 
-# 显示文件路径
+## 显示文件路径
 ```javascript
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 

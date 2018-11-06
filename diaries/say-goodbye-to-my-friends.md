@@ -1,7 +1,7 @@
 ---
 title: 上海送别朋友
-categories: diaries
-abbrlink: 26456
+category: diaries
+tags: ['diaries']
 date: 2016-12-03 22:00:00
 ---
 

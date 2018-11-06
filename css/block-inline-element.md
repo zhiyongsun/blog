@@ -1,7 +1,7 @@
 ---
 title: block inline element
-categories: css
-abbrlink: 11998
+category: css
+tags: ['css']
 date: 2017-02-07 22:00:00
 ---
 一、各种元素的width height margin padding 特性（具体css元素的分来参看二）

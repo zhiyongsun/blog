@@ -1,10 +1,10 @@
 ---
 title: ssh管理服务器
-tags: ssh
-categories: ssh
-abbrlink: 50327
+tags: ['ssh']
+category: ssh
 date: 2017-09-02 10:08:29
 ---
+
 # ssh管理服务器
 
 1. 登陆服务器

@@ -1,8 +1,7 @@
 ---
 title: css居中
-categories: css
-tags: CSS 居中
-abbrlink: 44297
+category: css
+tags: ['css']
 date: 2017-02-07 22:00:00
 ---
 ##  CSS 居中

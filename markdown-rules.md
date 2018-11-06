@@ -1,10 +1,11 @@
 ---
 title: markdown rules
-tags: markdowm
-categories: markdown
-abbrlink: 17249
+tags: ['markdown']
+category: markdown
 date: 2016-08-30 10:00:00
+cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 ---
+
 Markdown cells support standard Markdown syntax as well as GitHub Flavored Markdown (GFM). Open the preview to see these rendered.
 
 ### Basics

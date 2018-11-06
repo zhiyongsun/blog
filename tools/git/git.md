@@ -1,10 +1,9 @@
 ---
 title: git常用命令
-tags: git
-categories: git
+tags: ['git']
+category: tools
 date: 2017-09-02 23:05:30
 ---
-# git常用命令
 
 1. 查看分支 git branch -a
 1. 切换分支 git checkout barnch-name

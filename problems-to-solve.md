@@ -1,8 +1,7 @@
 ---
 title: problems
-tags: problems
-categories: problems
-abbrlink: 36551
+tags: ['problems']
+category: problems
 date: 2017-02-06 10:08:29
 ---
 

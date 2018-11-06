@@ -1,7 +1,7 @@
 ---
 title: 底部垂直居中
-categories: css
-abbrlink: 5869
+category: css
+tags: ['css']
 date: 2017-02-07 22:00:00
 ---
 1 底部对齐,父元素position:relative;,子元素position:absolut;bottom:0;

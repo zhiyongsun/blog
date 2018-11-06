@@ -1,10 +1,9 @@
 ---
 title: node实现页面缓存的策略
-abbrlink: 19
+tags: ['node']
+category: node
+date: 2017-09-02 10:08:29
 ---
----
----
-# node实现页面缓存的策略
 
 ## cache-control 
 ### HTTP 1.1以上支持，给定时长（单位s），有效时使用浏览器本地缓存，可覆盖expires

@@ -1,8 +1,7 @@
 ---
 title: 读穆斯林的葬礼
-tags: reading
-categories: reading
-abbrlink: 43659
+tags: ['reading']
+category: reading
 date: 2016-07-20 10:08:29
 ---
 已经是凌晨了，昨天刚刚看完了《穆斯林的葬礼》。  

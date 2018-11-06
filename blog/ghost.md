@@ -1,8 +1,7 @@
 ---
 title: '在阿里云 ECS Centos6.5上搭建Ghost博客系统,以及nodejs版本控制工具安装'
-categories: blog
-tags: blog
-abbrlink: 30941
+category: blog
+tags: ['blog']
 date: 2017-08-20 22:00:00
 ---
 

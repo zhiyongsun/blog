@@ -1,9 +1,9 @@
 ---
 title: icon font
-abbrlink: 6
+tags: ['css', 'icon font']
+category: css
+date: 2017-02-03 22:00:00
 ---
-# icon font
-
 ## 兼容问题
 - 字体声明，由于各个浏览器所支持的字体文件不同，因此我们要针对浏览器的这个特点制作多种字体文件以达到兼容的目的
 

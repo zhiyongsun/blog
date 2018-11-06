@@ -1,8 +1,8 @@
 ---
 title: Webstorm Setting
 date: '2017-08-279 11:06:14'
-tags: webstorm
-abbrlink: 10065
+tags: ['webstorm']
+category: tools
 ---
  
 

@@ -1,12 +1,9 @@
 ---
 title: zsh setting
-tags: zsh
-categories: zsh
-abbrlink: 47337
+tags: ['zsh']
+category: tools
 date: 2017-09-24 23:49:29
 ---
-
-# zsh
 
 # 以mac 为例,我们看下系统内置了几种shell
 

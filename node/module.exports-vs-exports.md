@@ -1,5 +1,9 @@
-module.exports vs exports
-
+---
+title: module.exports vs exports
+tags: ['module.exports vs exports']
+category: node
+date: 2017-09-02 10:08:29
+---
 ## 他们之间的连接
 
 1. module.exports 初始值为一个空对象 {}

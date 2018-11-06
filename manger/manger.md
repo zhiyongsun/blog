@@ -1,11 +1,9 @@
 ---
-title: 前端开发管理注意事项
-tags: manger
-categories: manger
-abbrlink: 36575
+title: 开发管理注意事项
+tags: ['manger']
+category: manger
 date: 2017-09-02 10:08:29
 ---
-# 前端开发管理注意事项
 
 ## 模块化开发思维
 1. 不管在前端，还是在后端，必须把界面、数据抽离成一个个模块，然后由模块构成一个个页面。提高开发效率。

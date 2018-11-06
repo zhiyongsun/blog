@@ -1,8 +1,7 @@
 ---
 title: 阿里云服务器搭建hexo博客
-tags: blog
+tags: ['blog']
 categories: blog
-abbrlink: 19550
 date: 2017-08-20 23:00:00
 ---
 

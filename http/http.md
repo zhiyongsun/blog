@@ -1,9 +1,10 @@
 ---
 title: http
-categories: http
-abbrlink: 40570
+category: http
+tags: [http]
 date: 2017-05-03 22:00:00
 ---
+
 ## 简介
 1. HTTP协议全称是Hyper Text Transfer Protocol(超文本传输协议)的缩写,是用于服务器传输超文本到本地浏览器的传送协议。    
 2. HTTP协议工作于客户端-服务端架构上。浏览器作为HTTP客户端通过URL向HTTP服 务端即WEB服务器发送所有请求。Web服务器根据接收到的请求后,向客户端发送响应信息。

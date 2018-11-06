@@ -1,8 +1,9 @@
 ---
 title: 前端的一些思考
-abbrlink: 5
+tags: ['thoughts']
+category: thoughts
+date: 2017-02-06 10:08:29
 ---
-# 前端的一些思考
 
 ## 几个流程思考
   - 前端开发的流程是什么

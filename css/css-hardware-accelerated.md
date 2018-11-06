@@ -1,8 +1,7 @@
 ---
 title: css硬件加速
-tags: css硬件加速
-categories: css优化
-abbrlink: 41321
+tags: ['css硬件加速']
+category: css优化
 date: 2017-02-04 10:08:29
 ---
 

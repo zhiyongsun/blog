@@ -1,14 +1,13 @@
 ---
 title: thoughts
-tags: thoughts
-categories: thoughts
-abbrlink: 51347
+tags: ['thoughts']
+category: thoughts
 date: 2017-02-06 10:08:29
 ---
 
-# 再次
+## 再次
 记录下自己的一些对未来的想法
-# 我认为未来会火热的
+## 我认为未来会火热的
 1. 旅游业（现在已经很火）
 2. 自动化（包括家务自动化）
 3. 云

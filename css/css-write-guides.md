@@ -1,12 +1,12 @@
 ---
 title: 'css书写原则'
-categories: css 
-tags: css书写原则
+category: css 
+tags: ['css书写原则']
 date: 2017-02-07 22:00:00
 ---
 
 
-# 原则
+## 原则
 1. 建立自己的书写规范
 
 2. 不要动态生成css样式,可以动态生成类,但是也要少用

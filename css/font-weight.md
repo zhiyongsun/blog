@@ -1,9 +1,11 @@
 ---
 title: font weight 数值名称对应表
-abbrlink: 1
+tags: ['font weight']
+category: css 
+date: 2017-01-20 22:00:00
 ---
 
-# font weight 数值名称对应表
+## font weight 数值名称对应表
 |数值|对应名称|
 |---|---|
 |100|Thin (Hairline)|

@@ -1,11 +1,11 @@
 ---
 title: 选择器
-categories: css 
+category: css 
+tags: ['css选择器']
+date: 2017-02-04 10:08:29
 ---
 
 ## not first child
-
-
 - 方法1：ie6-8 不能使用
 ```css
 .item:not(:first-child) {
@@ -42,7 +42,6 @@ categories: css
  margin-left: 10px;
 }
 ```
-
 
 ## 参考链接
 [stackover: How can I use a not:first-child selector?](https://stackoverflow.com/questions/12289853/how-can-i-use-a-notfirst-child-selector)

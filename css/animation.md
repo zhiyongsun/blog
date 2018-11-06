@@ -1,6 +1,8 @@
 ---
 title: 动画
-categories: css 
+category: css 
+tags: ['css']
+date: 2017-02-03 22:00:00
 ---
 
 

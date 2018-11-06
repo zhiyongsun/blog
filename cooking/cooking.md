@@ -1,8 +1,7 @@
 ---
 title: cooking
-categories: cooking
-tags: cooking
-abbrlink: 57904
+category: cooking
+tags: ['cooking']
 date: 2017-01-20 22:00:00
 ---
-# cooking
+我的cooking记录： 

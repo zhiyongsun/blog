@@ -1,7 +1,7 @@
 ---
 title: 行内元素的特点
-categories: css
-abbrlink: 38866
+category: css
+tags: ['css']
 date: 2017-02-07 22:00:00
 ---
 行内元素的特点：

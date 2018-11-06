@@ -1,8 +1,7 @@
 ---
 title: mongodb
-tags: mongodb
-categories: mongodb
-abbrlink: 4312
+tags: ['mongodb']
+category: mongodb
 date: 2017-10-19 08:00:00
 ---
 
@@ -10,7 +9,7 @@ date: 2017-10-19 08:00:00
 ## linux下包安装
   - 下载  
   从[官网下载](https://www.mongodb.com/download-center#community) linux 包
-  ![](./download.png)
+  ![](download.png)
   
   - 解压,安装
   ```bash

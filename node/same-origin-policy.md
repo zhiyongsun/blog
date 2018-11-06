@@ -1,4 +1,9 @@
-# 同源策略
+---
+title: 同源策略
+tags: ['node']
+category: node
+date: 2017-09-02 10:08:29
+---
 
 ## scheme,host, port 都相同视为同源。
 

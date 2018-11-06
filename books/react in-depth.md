@@ -1,11 +1,10 @@
 ---
-title: react-Indepth读书笔记
-categories: books
-tags: books
+title: react-indepth 读书笔记
+category: books
+tags: ['books']
 abbrlink: 20559
 date: 2017-01-20 22:00:00
 ---
-# react-Indepth reading note
 
 ##1 React Life Cycle Methods Overview
 
