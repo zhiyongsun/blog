@@ -1,6 +1,6 @@
 ---
-title: problems
-tags: ['problems']
+title: todos
+tags: ['todo']
 category: problems
 date: 2017-02-06 10:08:29
 ---
@@ -27,4 +27,5 @@ date: 2017-02-06 10:08:29
 29. 防抖函数与节流函数
 30. 表达式(expressions)和语句(statements)之间的区别.
 http://www.cnblogs.com/ziyunfei/archive/2012/09/16/2687589.html
+- [ ] audits
 
