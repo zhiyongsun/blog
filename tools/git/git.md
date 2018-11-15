@@ -124,8 +124,13 @@ $ git push --force
 $ git fetch --all
 $ git reset --hard origin/branchname
 ```
+## submodule
 
-## 初始化 submodule
+### 添加
+```bash
+$ git submodule add 'https://example.git'
+```
+### 初始化 submodule
 
 ```bash
 $ git submodule update --init --recursive
