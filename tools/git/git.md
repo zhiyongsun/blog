@@ -135,3 +135,8 @@ $ git submodule add 'https://example.git'
 ```bash
 $ git submodule update --init --recursive
 ```
+### 重新添加 submodule
+
+```bash
+https://stackoverflow.com/questions/20929336/git-submodule-add-a-git-directory-is-found-locally-issue
+```
