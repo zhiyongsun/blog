@@ -2,7 +2,7 @@
 title: ECMAScript 6 入门 笔记
 category: books
 tags: ['books']
-date: 2018-12-04 22:00:00
+date: 2018-12-04 10:00:00
 ---
 
 ## let 和 const 命令
