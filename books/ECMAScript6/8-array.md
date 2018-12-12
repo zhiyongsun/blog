@@ -119,3 +119,4 @@ Array.prototype.map()），然后对返回值组成的数组执行flat()方法�
 
 由于空位的处理规则非常不统一，所以建议避免出现空位。
 
+## 仅为个人读书笔记，原书 http://es6.ruanyifeng.com/

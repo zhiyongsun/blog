@@ -91,3 +91,5 @@ Object.getOwnPropertyDescriptors(obj)
 ```
 
 未看完，看不下去了。看完也属于记不住那种。
+
+## 仅为个人读书笔记，原书 http://es6.ruanyifeng.com/
