@@ -1,5 +1,5 @@
 ---
-title: 构造函数原型里面为什么需要有个 constructor 来执行构造函数自己？
+title: 构造函数原型里面为什么需要有个 constructor 来指向构造函数自己？
 category: JavaScript
 tags: ['constructor']
 date: 2018-12-17 13:00:00
