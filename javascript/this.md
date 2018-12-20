@@ -77,54 +77,54 @@ new关键字可以改变this的指向，将这个this指向对象a
 ## this碰到return时
 
 ```js
-function fn()  
+function Fn()  
 {  
     this.user = '追梦子';  
     return {};  
 }
-var a = new fn;  
+var a = new Fn();  
 console.log(a.user); //undefined
 ```
 
 ```js
-function fn()  
+function Fn()  
 {  
     this.user = '追梦子';  
     return 1;
 }
-var a = new fn;  
+var a = new Fn();  
 console.log(a.user); //追梦子
 ```
 
 ```js
-function fn()  
+function Fn()  
 {  
     this.user = '追梦子';  
     return undefined;
 }
-var a = new fn;  
+var a = new Fn();  
 console.log(a.user); //追梦子
 ```
 如果返回值是一个对象，那么this指向的就是那个返回的对象，如果返回值不是一个对象那么this还是指向函数的实例。
 ```js
-function fn()  
+function Fn()  
 {  
     this.user = '追梦子';  
     return undefined;
 }
-var a = new fn;  
+var a = new Fn();  
 console.log(a); //fn {user: "追梦子"}
 ```
 
 还有一点就是虽然null也是对象，但是在这里this还是指向那个函数的实例，因为null比较特殊。
 
 ```js
-function fn()  
+function Fn()  
 {  
     this.user = '追梦子';  
     return null;
 }
-var a = new fn;  
+var a = new Fn;  
 console.log(a.user); //追梦子
 ```
 
@@ -134,10 +134,10 @@ console.log(a.user); //追梦子
 - new操作符会改变函数this的指向问题，虽然我们上面讲解过了，但是并没有深入的讨论这个问题，网上也很少说，所以在这里有必要说一下。
 
 ```js
-function fn(){
+function Fn(){
     this.num = 1;
 }
-var a = new fn();
+var a = new Fn();
 console.log(a.num); //1
 ```
 　　为什么this会指向a？首先new关键字会创建一个空的对象，然后会自动调用一个函数apply方法，将this指向这个空对象，这样的话函数内部的this就会被这个空的对象替代。
