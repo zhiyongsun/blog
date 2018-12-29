@@ -140,3 +140,17 @@ $ git submodule update --init --recursive
 ```bash
 https://stackoverflow.com/questions/20929336/git-submodule-add-a-git-directory-is-found-locally-issue
 ```
+
+## tag
+```bash
+// 列显已有的标签
+$ git tag
+
+//新建标签
+$ git tag 
+
+// 推送到远程
+$ git push origin v1.5
+// 推送所有 tags
+$ git push origin --tags
+```
