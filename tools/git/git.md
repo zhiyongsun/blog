@@ -154,3 +154,20 @@ $ git push origin v1.5
 // 推送所有 tags
 $ git push origin --tags
 ```
+
+## 关联远程 git
+
+```js
+#创建新文件夹
+mkdir xxx
+#进入
+cd xxx 
+#初始化Git仓库 
+git init
+#提交改变到缓存
+git commit -m 'description'
+#本地git仓库关联GitHub仓库 
+git remote add origin git@github.com:han1202012/TabHost_Test.git
+#提交到GitHub中 
+git push -u origin master
+```
