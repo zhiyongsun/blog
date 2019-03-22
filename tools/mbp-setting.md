@@ -71,3 +71,10 @@ defaults write com.apple.finder AppleShowAllFiles No && killall Finder //不显�
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
 ```
 
+## 查看端口占用及杀死进程
+
+```bash
+lsof -i :3000
+
+kill -9 3083
+```
