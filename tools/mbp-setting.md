@@ -25,6 +25,7 @@ date: 2017-02-06 10:08:29
 * mongodb
 * iterm2
 * mysql
+* oh my zsh
 
 ## browers
 * chrome
