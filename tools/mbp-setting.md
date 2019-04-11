@@ -23,7 +23,8 @@ date: 2017-02-06 10:08:29
 * studio
 * Dash:离线文档
 * mongodb
-* iterm
+* iterm2
+* mysql
 
 ## browers
 * chrome
