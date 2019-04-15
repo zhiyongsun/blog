@@ -20,6 +20,7 @@ date: 2017-02-06 10:08:29
     * 无限试用:rm "/Users/$(whoami)/Library/Application Support/Beyond Compare/registry.dat"
 * xcode(git,svn)
 * node
+* npm 包权限问题 https://www.kancloud.cn/shellway/npm-doc/199985
 * studio
 * Dash:离线文档
 * mongodb
@@ -47,7 +48,7 @@ date: 2017-02-06 10:08:29
 
 
 ## 二 setting
-* 显示隐藏文件夹 
+* 显示隐藏文件夹
 
 1. 早期的OS X（10.6~10.8）系统可以使用如下两条命令来开始或者关闭系统隐藏文件的显示：
 
