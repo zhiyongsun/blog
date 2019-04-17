@@ -13,6 +13,13 @@ date: 2017-02-06 10:08:29
 
 ## code
 * brew
+    -  brew services start mongodb
+    Or, if you don't want/need a background service you can just run:
+      mongod --config /usr/local/etc/mongod.conf
+    -  brew services start mysql
+    -  brew services start redis
+    if you don't want/need a background service you can just run:
+      redis-server /usr/local/etc/redis.conf
 * node
 * charles(抓包)
 * webstorm
