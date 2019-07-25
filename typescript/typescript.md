@@ -80,6 +80,10 @@ let someValue: any = "this is a string";
 
 let strLength: number = (someValue as string).length;
 ```
+### 枚举
+使用枚举很简单：通过枚举的属性来访问枚举成员，和枚举的名字来访问枚举类型：
+
+
 
 
 
