@@ -271,3 +271,7 @@ git remote rename master xiaohe # 重命名远程分支的名称
 git push origin --delete <branch-name> # 删除远程某个分支
 git remote update origin --prune # 更新远程分支列表
 git push -f # 强制将本地推送到远程仓库
+
+
+## 选取某个提交
+git cherry-pick 
