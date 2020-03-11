@@ -27,15 +27,7 @@ $ git merge --abort
 ```
 
 # git撤销commit，但未git push的命令
-   - 找到之前提交的git commit的id
-   git log
-   找到想要撤销的id
-   - git reset –hard id
-   完成撤销,同时将代码恢复到前一commit_id 对应的版本
-   - git reset id
-   完成Commit命令的撤销，但是不对代码修改进行撤销，可以直接通过git commit 重新提交对本地代码的修改
-
-
+  git stash clear
 ## 添加 shh 之后,确认没有错误,但是,报错如下
 
 ```bash
