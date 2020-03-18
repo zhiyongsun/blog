@@ -78,6 +78,11 @@ git clean 参数
     -df 删除 文件 和 目录
 ```
 
+## 放弃服务器修改
+```bash
+git commit --amend #也叫追加提交，它可以在不增加一个新的commit-id的情况下将新修改的代码追加到前一次的commit-id中，
+```
+
 ## mac 下，配置多个 git 账号
 
 - 进入目录下
