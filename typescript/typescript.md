@@ -84,6 +84,36 @@ let strLength: number = (someValue as string).length;
 使用枚举很简单：通过枚举的属性来访问枚举成员，和枚举的名字来访问枚举类型：
 
 
+### 泛型
+```typescript
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+let myIdentity: <U>(arg: U) => U = identity;
+```
+
+```typescript
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+let myIdentity: {<T>(arg: T): T} = identity;
+```
+
+```typescript
+interface GenericIdentityFn {
+    <T>(arg: T): T;
+}
+
+function identity<T>(arg: T): T {
+    return arg;
+}
+
+let myIdentity: GenericIdentityFn = identity;
+```
+
+
 
 
 
