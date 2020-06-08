@@ -29,3 +29,7 @@ date: 2017-08-30 10:00:00
 ## plugins
 dllPlugin   
 对于固定的打包资源，进行打包，不需要二次打包。
+
+## 打包性能优化
+https://juejin.im/post/5dcc45136fb9a02b450c2818#heading-3
+
