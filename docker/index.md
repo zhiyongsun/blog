@@ -1,4 +1,7 @@
 # docker
+
+## docker mysql navicat 连接
+https://cloud.tencent.com/developer/article/1651286
 ## 命令
 ### 查看image
 docker image ls
