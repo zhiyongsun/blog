@@ -183,7 +183,9 @@ git push -u origin master
 
 ## 更新测试
 
-
+## git revert 和 git reset的区别
+git revert是HEAD继续前进，只是新的commit的内容和要revert的内容正好相反，能够抵消要被revert的内容
+git reset 是把HEAD向后移动了一下
 
 
 ## 配置操作
