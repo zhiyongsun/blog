@@ -21,7 +21,7 @@ export const Footer = () => {
             ))}
           </div>
           <div className="text-neutral-200 text-sm text-center">
-            &copy; 2022 - {SITE_NAME}
+            &copy; 2023 - {SITE_NAME}
           </div>
         </div>
       </ContentLayout>

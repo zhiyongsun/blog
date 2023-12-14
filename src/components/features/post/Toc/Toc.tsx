@@ -19,7 +19,7 @@ export const Toc: React.VFC = () => {
       <div className="center">
         <div className="center gap-2 py-2 px-3 border-b-2 border-teal-700 dark:border-teal-400 text-base font-bold text-primary-1">
           <MdOutlineContentCopy />
-          目次
+          目录
         </div>
       </div>
       <nav className="toc" />

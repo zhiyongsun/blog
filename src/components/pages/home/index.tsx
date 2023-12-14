@@ -17,7 +17,7 @@ export const Home: React.VFC<Props> = ({ posts }) => {
           <Stories posts={posts} title="最新" icon={<RiChatNewLine />} />
           <Link href="/posts/page/1" passHref>
             <a className="button">
-              博客总览
+              总览
             </a>
           </Link>
         </div>
