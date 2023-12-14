@@ -5,7 +5,7 @@ import { joinPath } from '@/lib/joinPath';
 
 export const Seo = () => {
   const rootPath = useRootPath();
-  const imageURL = joinPath(ROOT_URL, '/assets/author.png');
+  const imageURL = joinPath(ROOT_URL, '/assets/author.jpeg');
 
   return (
     <>

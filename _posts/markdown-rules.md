@@ -2,7 +2,7 @@
 title: markdown rules
 tags: ['markdown']
 category: markdown
-date: 2016-08-30 10:00:00
+date: '2016-08-30 10:00:00'
 cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 ---
 

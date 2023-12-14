@@ -15,7 +15,7 @@ export const Tags: React.VFC<Props> = ({ tags }) => {
           <div className="center">
             <h2 className="center gap-2 py-2 px-3 border-b-2 border-teal-800 dark:border-teal-400 text-xl font-bold text-primary-1">
               <AiTwotoneTags />
-              タグ
+              标签
             </h2>
           </div>
 

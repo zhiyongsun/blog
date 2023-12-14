@@ -15,7 +15,7 @@ type Props = {
 
 export const Posts: React.VFC<Props> = ({ post }) => {
   const lg = useBreakPoint('lg');
-  const imageURL = joinPath(ROOT_URL, post.ogImage.url);
+  const imageURL = post?.ogImage?.url ? joinPath(ROOT_URL, post?.ogImage?.url) : '';
 
   return (
     <>

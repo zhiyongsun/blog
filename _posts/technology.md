@@ -2,7 +2,7 @@
 title: technology choose
 tags: ['technology']
 category: problems
-date: 2019-01-07 10:08:29
+date: '2019-01-07 10:08:29'
 ---
 
 ## 技术选型
