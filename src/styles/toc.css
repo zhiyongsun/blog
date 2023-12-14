@@ -1,0 +1,19 @@
+.toc-list {
+  @apply vstack  gap-3;
+}
+
+.toc-list .toc-list {
+  @apply vstack  gap-2 pl-4 mt-1;
+}
+
+.toc-link {
+  @apply text-sm sm:text-base font-bold text-neutral-400 dark:text-neutral-400 hover:text-teal-800 dark:hover:text-teal-400;
+}
+
+.toc-list .toc-list .toc-link {
+  @apply text-sm;
+}
+
+.is-active-link {
+  @apply text-neutral-900 dark:text-teal-400;
+}
