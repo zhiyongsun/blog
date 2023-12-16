@@ -26,7 +26,6 @@ export async function getStaticProps({ params }: Params) {
     'excerpt',
     'tags',
   ]);
-  console.log('post', post);
   const content = await markdownToHtml(post.content || '');
 
   return {

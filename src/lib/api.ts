@@ -83,7 +83,5 @@ export const getAllPosts = (fields: Field[] = []) => {
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     .sort((post1, post2) => (post1.date! > post2.date! ? -1 : 1));
-    console.log(posts)
-    
   return posts;
 };
