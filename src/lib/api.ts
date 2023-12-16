@@ -52,6 +52,7 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
   } catch (error) {
     data.date = null;
     console.log(data, error)
+    return {};
   }
 
   type Items = {
@@ -83,7 +84,7 @@ export const getAllPosts = (fields: Field[] = []) => {
   const slugs = getPostSlugs();
   
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields)).filter(x=>x.date)
+    .map((slug) => getPostBySlug(slug, fields)).filter(x=>Object.keys(x).length>0)
     .sort((post1, post2) => (post1.date! > post2.date! ? -1 : 1));
   return posts;
 };
