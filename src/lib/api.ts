@@ -46,13 +46,11 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
   // const fullPath = resolve(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  if (!data?.date) {
-    console.log('error path', fullPath);
-    return null;
-  }
+  
   try {
     data.date = data?.date ? new Date(data.date).toISOString() : '';
   } catch (error) {
+    data.date = null;
     console.log(data, error)
   }
 
@@ -85,7 +83,7 @@ export const getAllPosts = (fields: Field[] = []) => {
   const slugs = getPostSlugs();
   
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields)).filter(Boolean)
+    .map((slug) => getPostBySlug(slug, fields)).filter(x=>x.date)
     .sort((post1, post2) => (post1.date! > post2.date! ? -1 : 1));
   return posts;
 };
