@@ -3,18 +3,18 @@ import { Link } from '@/components/common/Link';
 const View = () => (
   <div className="vstack items-center p-8 bg-primary-1">
     <p className="mb-4 text-sm md:text-base font-bold uppercase text-accent-1">
-      That’s a 404
+      404
     </p>
     <h1 className="mb-2 text-2xl md:text-3xl font-bold text-primary-1">
-      Page not found
+      页面不存在
     </h1>
 
     <p className="mb-12 text-gray-500 dark:text-gray-300 md:text-lg">
-      The page you’re looking for doesn’t exist.
+      您访问的页面不存在
     </p>
 
     <Link href="/" passHref>
-      <a className="px-10 button">Go home</a>
+      <a className="px-10 button">首页</a>
     </Link>
   </div>
 );

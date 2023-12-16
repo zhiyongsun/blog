@@ -1,12 +1,38 @@
 import fs from 'fs';
-import { resolve } from 'path';
+import path, { resolve } from 'path';
 import matter from 'gray-matter';
 import { paginationOffset } from '@/config/pagination';
 import { PostType } from '@/types/post';
 
 const postsDirectory = resolve(process.cwd(), '_posts');
 
-export const getPostSlugs = () => fs.readdirSync(postsDirectory);
+
+// 递归读取博客目录下的所有文件和文件夹路径
+const getBlogPaths = (directory: fs.PathLike) => {
+  const entries = fs.readdirSync(directory, { withFileTypes: true });
+  let paths: any[] = [];
+
+  entries.forEach((entry) => {
+    const entryPath = path.join(directory, entry.name);
+
+    if (entry.isDirectory()) {
+      // 递归处理子目录
+      paths = paths.concat(getBlogPaths(entryPath));
+    } else {
+      // 将文件路径添加到数组中
+      const fullPath = path.relative(postsDirectory, entryPath);
+      if (fullPath.endsWith('.md')) {
+        paths.push(fullPath.replace(/\.md$/, ''));
+      }
+    }
+  });
+
+  return paths;
+};
+
+export const getPostSlugs = () => getBlogPaths(postsDirectory);
+// export const getPostSlugs = () => fs.readdirSync(postsDirectory);
+
 
 export const getMaxPage = () => {
   const postNum = getPostSlugs().length;
@@ -14,10 +40,17 @@ export const getMaxPage = () => {
 };
 
 export const getPostBySlug = (slug: string, fields: string[] = []) => {
-  const realSlug = slug.replace(/\.md$/, '');
-  const fullPath = resolve(postsDirectory, `${realSlug}.md`);
+  const fullPath = path.join(postsDirectory, `${slug}.md`);
+  // const realSlug = slug.replace(/\.md$/, '');
+  // const realSlug = path.basename(fullPath.replace(/\.md$/, ''));
+  // const fullPath = resolve(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
+  try {
+    data.date = data?.date ? new Date(data.date).toISOString() : '';
+  } catch (error) {
+    console.log(data, error)
+  }
 
   type Items = {
     [key: string]: string;
@@ -28,7 +61,7 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
-      items[field] = realSlug;
+      items[field] = slug;
     }
     if (field === 'content') {
       items[field] = content;
@@ -46,8 +79,11 @@ type Field = keyof PostType;
 
 export const getAllPosts = (fields: Field[] = []) => {
   const slugs = getPostSlugs();
+  
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     .sort((post1, post2) => (post1.date! > post2.date! ? -1 : 1));
+    console.log(posts)
+    
   return posts;
 };

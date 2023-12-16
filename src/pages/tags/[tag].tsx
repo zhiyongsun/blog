@@ -29,7 +29,8 @@ export const getStaticProps = async ({ params }: Params) => {
 };
 
 export async function getStaticPaths() {
-  const tags = getAllPosts(['tags']).flatMap((post) => post.tags);
+  const tags = getAllPosts(['tags']).filter(({ tags }) => tags?.length).flatMap((post) => post.tags);
+  debugger
 
   return {
     paths: tags.map((tag) => {

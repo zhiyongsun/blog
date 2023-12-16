@@ -8,7 +8,7 @@ const View: React.VFC<Props> = (props: Props) => <Tags {...props} />;
 export default View;
 
 export const getStaticProps = async () => {
-  let tags = getAllPosts(['tags']).flatMap(({ tags }) => tags);
+  let tags = getAllPosts(['tags']).filter(({ tags }) => tags?.length).flatMap(({ tags }) => tags);
   tags = Array.from(new Set(tags));
 
   return {

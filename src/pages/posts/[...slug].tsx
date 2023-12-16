@@ -10,12 +10,12 @@ export default View;
 
 type Params = {
   params: {
-    slug: string;
+    slug: string[];
   };
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
+  const post = getPostBySlug(params.slug?.join('/'), [
     'title',
     'date',
     'slug',
@@ -26,6 +26,7 @@ export async function getStaticProps({ params }: Params) {
     'excerpt',
     'tags',
   ]);
+  console.log('post', post);
   const content = await markdownToHtml(post.content || '');
 
   return {
@@ -45,7 +46,7 @@ export async function getStaticPaths() {
     paths: posts.map((post) => {
       return {
         params: {
-          slug: post.slug,
+          slug: post.slug?.split('/'),
         },
       };
     }),

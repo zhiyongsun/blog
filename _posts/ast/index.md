@@ -1,3 +1,11 @@
+---
+title: ast
+tags: ['ast']
+category: ast
+date: '2016-08-30 10:00:00'
+---
+
+
 # AST
 ## 定义
 在计算机科学中，抽象语法树（abstract syntax tree或者缩写为AST），或者语法树（syntax tree），是源代码的抽象语法结构的树状表现形式，这里特指编程语言的源代码。
