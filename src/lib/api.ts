@@ -46,7 +46,9 @@ export const getPostBySlug = (slug: string, fields: string[] = []) => {
   // const fullPath = resolve(postsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  
+  if (!data?.date) {
+    return {};
+  }
   try {
     data.date = data?.date ? new Date(data.date).toISOString() : '';
   } catch (error) {
