@@ -1,5 +1,5 @@
 ---
-title: '继承与原型链 '
+title: '继承与原型链'
 category: JavaScript
 tags: ['继承与原型链']
 date: 2017-09-22 22:00:00
@@ -15,7 +15,7 @@ date: 2017-09-22 22:00:00
  
 C++的写法：
 
-```C++
+```
 ClassName *object = new ClassName(param);
 ```
 

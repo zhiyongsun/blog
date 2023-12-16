@@ -14,7 +14,7 @@ $ npm install opn
 ```
 使用示例
 
-```node
+```
 const config = {
   port: 3000,
 };

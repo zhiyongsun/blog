@@ -7,7 +7,7 @@ date: 2017-08-30 00:45:06
 
 ## 服务器下载
 
-```yum
+```
 yum -y install nginx
 ```
 

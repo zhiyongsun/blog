@@ -7,7 +7,7 @@ date: 2017-09-24 23:49:29
 
 # 以mac 为例,我们看下系统内置了几种shell
 
-```zsh
+```
 $ cat /etc/shells
 
 # List of acceptable shells for chpass(1).
@@ -24,12 +24,12 @@ $ cat /etc/shells
 ```
 
 # 首先查看下zsh 版本,如果没有,请先安装
-```zsh
+```
 $ zsh --version
 ```
 # 设置默认为 shells,例如zsh
 
-```zsh
+```
 $ chsh -s /bin/zsh
 ```
 

@@ -1,5 +1,7 @@
 ---
 title: throw
+category: JavaScript
+tags: ['throw']
 date: 2018-12-17 13:00:00
 ---
 
