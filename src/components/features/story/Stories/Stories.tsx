@@ -14,7 +14,7 @@ export const Stories = ({ posts, icon, title }: Props) => {
         <h2 className="hstack gap-2 text-primary-1 text-3xl font-bold tracking-tighter leading-tight">
           {icon} {title}
         </h2>
-        <div className="grid grid-cols-1 gap-10">
+        <div className="grid grid-cols-1 gap-1">
           {posts.map((post) => (
             <Story
               key={post.slug}

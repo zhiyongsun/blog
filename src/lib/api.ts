@@ -8,7 +8,7 @@ const postsDirectory = resolve(process.cwd(), '_posts');
 
 
 // 递归读取博客目录下的所有文件和文件夹路径
-const getBlogPaths = (directory: fs.PathLike) => {
+const getBlogPaths = (directory: string) => {
   const entries = fs.readdirSync(directory, { withFileTypes: true });
   let paths: any[] = [];
 
